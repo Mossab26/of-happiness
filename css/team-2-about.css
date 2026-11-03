@@ -1,0 +1,175 @@
+/**
+ * css/team-2-about.css
+ * ملكية الفريق 2: قسم من نحن ومعلومات النادي (Team 2 - About Section)
+ * 
+ * تنسيقات خاصة بقسم التعريف بالنادي، إشراف الأستاذ ابن عيسى عاطف، والأهداف الخمسة.
+ */
+
+.about-section {
+  background-color: var(--color-bg-surface);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-2xl);
+}
+
+@media (min-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: start;
+  }
+}
+
+.about-intro-card {
+  background: var(--color-bg-main);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  box-shadow: var(--shadow-sm);
+}
+
+.about-intro-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.about-meta-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid var(--color-border);
+}
+
+@media (min-width: 600px) {
+  .about-meta-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.about-meta-item {
+  background-color: var(--color-bg-soft);
+  border: 1px solid var(--color-primary-light);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+}
+
+.about-meta-label {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.about-meta-value {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.about-supervisor-box {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  border: 1px solid var(--color-primary-light);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+}
+
+.about-supervisor-box h4 {
+  font-size: 1.2rem;
+  color: var(--color-primary-hover);
+  margin-bottom: var(--spacing-sm);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-supervisor-box p {
+  color: var(--color-text-secondary);
+  line-height: 1.75;
+}
+
+/* شبكة الأهداف الخمسة - Objectives Grid */
+.objectives-wrapper {
+  margin-top: var(--spacing-2xl);
+}
+
+.objectives-header {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.objectives-header h3 {
+  font-size: 1.6rem;
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.objectives-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+}
+
+@media (min-width: 640px) {
+  .objectives-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .objectives-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.objective-card {
+  background-color: var(--color-bg-main);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform var(--transition-normal), border-color var(--transition-normal);
+}
+
+.objective-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-primary);
+}
+
+.objective-number {
+  width: 36px;
+  height: 36px;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.objective-card h4 {
+  font-size: 1.15rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text-primary);
+}
+
+.objective-card p {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  line-height: 1.65;
+}

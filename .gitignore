@@ -1,0 +1,20 @@
+# المستودع وملفات البناء المؤقتة
+node_modules/
+dist/
+build/
+coverage/
+
+# بيئات التشغيل والأنظمة
+.DS_Store
+Thumbs.db
+*.log
+
+# بيئة VS Code والملفات المحلية
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+
+# المتغيرات السرية إن وجدت
+.env*
+!.env.example

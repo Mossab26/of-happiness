@@ -1,0 +1,8 @@
+{
+  "name": "The Chemistry of Happiness Club - نادي كيمياء السعادة",
+  "description": "الموقع الرسمي والمنصة التعليمية لنادي كيمياء السعادة بجامعة فرحات عباس سطيف 1، الجزائر.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
